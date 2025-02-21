@@ -1,6 +1,4 @@
-# demoWeb
-
-🚀 Proyecto Demo Web - Estructura Inicial de Landing Page
+# Proyecto Demo Web - Estructura Inicial de Landing Page
 
 ## 📌 Descripción
 Este repositorio contiene la estructura inicial del proyecto **demoWeb**, una landing page en desarrollo. En esta primera versión, se han creado las carpetas y archivos básicos necesarios para comenzar el proyecto de manera organizada y eficiente.
