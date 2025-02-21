@@ -1,6 +1,3 @@
-![Version](https://img.shields.io/badge/vermg.shields.io/badge/status-in%20progresect Overview
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascriptimg.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoCol/img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColo://img.shields.io/badge/-%F0%9F%98%8E%20Asombrenzando
-
 # demoWeb
 
 🚀 Proyecto Demo Web - Estructura Inicial de Landing Page
@@ -87,6 +84,15 @@ En la raíz del proyecto se creó el archivo `index.html` con la estructura bás
 - Recuerda utilizar `Live Server` en VSCode para visualizar los cambios en tiempo real.
 - Se recomienda seguir la organización de carpetas establecida para mantener un código limpio y estructurado.
 - Se sugiere documentar cualquier modificación importante en el código para facilitar su mantenimiento.
+
+## 🏆 Tecnologías Utilizadas
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Web Development](https://img.shields.io/badge/Web%20Development-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)
 
 ---
 📌 **Autor:** [Tu Nombre]  
