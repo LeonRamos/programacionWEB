@@ -61,10 +61,22 @@ Se han aplicado varios estilos personalizados para mejorar la apariencia:
 ## 🎯 Objetivo del Proyecto
 Este proyecto tiene como propósito proporcionar una base sólida para aprender **HTML, CSS y JavaScript**, permitiendo a los estudiantes desarrollar sus propios proyectos web de manera efectiva y profesional.
 
-## 📌 Próximas Mejoras (Versión 1.2)
-- Implementación de interactividad con **JavaScript**.
-- Optimización del diseño responsivo para una mejor experiencia en móviles.
-- Mejora en la accesibilidad y usabilidad del sitio.
+---
+## 📢 Notas Adicionales
+- Recuerda utilizar `Live Server` en VSCode para visualizar los cambios en tiempo real y comprobar en Google Chrome.
+- Se recomienda seguir la organización de carpetas establecida para mantener un código limpio y estructurado.
+- Se sugiere documentar cualquier modificación importante en el código para facilitar su mantenimiento.
+
+## 🏆 Tecnologías Utilizadas
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Web Development](https://img.shields.io/badge/Web%20Development-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)
 
 ---
-**Desarrollado con ❤️ por el equipo de Programación Web.**
+📌 **Autor:** [Tu Nombre]  
+📅 **Fecha de Creación:** [Fecha Actual]  
+🔗 **Repositorio:** [URL del Repositorio]
