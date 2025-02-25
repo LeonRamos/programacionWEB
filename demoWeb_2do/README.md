@@ -1,6 +1,6 @@
-# Curso Programación Web - Versión 1.1
+# Proyecto Demo Web - Componente hero
 
-Este proyecto es una landing page diseñada para el curso de **Programación Web**. En esta versión 1.1, se han agregado mejoras significativas a la estructura HTML y los estilos CSS para mejorar la presentación y la experiencia del usuario.
+En esta versión 1.1, se han agregado mejoras significativas a la estructura HTML y los estilos CSS para mejorar la presentación y la experiencia del usuario.
 
 ## 📌 Mejoras en la Versión 1.1
 
