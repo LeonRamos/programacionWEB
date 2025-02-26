@@ -1,4 +1,4 @@
-# Curso de Programación Web
+# Proyecto Demo Web - Componente Main
 
 ## Versión 1.2
 
@@ -116,9 +116,17 @@ Este curso de Programación Web está diseñado para enseñar desde los fundamen
 2. Abrir el archivo `index.html` en un navegador.
 3. Explorar los estilos en `styles.css` para personalizar la apariencia.
 
-### Próximas mejoras:
-- Agregar más interactividad con JavaScript.
-- Incorporar una sección de testimonios.
-- Mejorar la adaptabilidad en dispositivos móviles.
+## 🏆 Tecnologías Utilizadas
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Web Development](https://img.shields.io/badge/Web%20Development-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)
+
+---
+📌 **Autor:** [Tu Nombre]  
+📅 **Fecha de Creación:** [Fecha Actual]  
+🔗 **Repositorio:** [URL del Repositorio]
 ¡Sigue atento a las próximas actualizaciones! 🚀
