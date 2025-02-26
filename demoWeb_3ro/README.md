@@ -2,11 +2,11 @@
 
 ## Versión 1.2
 
-### Mejoras en esta versión:
+### 📌 Mejoras en esta versión:
 
 Se han agregado nuevas secciones al HTML y CSS para mejorar la presentación y funcionalidad del curso.
 
-### Cambios en el HTML:
+### Cambios en el 🔹 HTML:
 
 Se ha añadido un `<main>` con las siguientes secciones:
 
@@ -66,7 +66,7 @@ Se ha añadido un `<main>` con las siguientes secciones:
 }
 ```
 
-#### Estilos para la sección "knowledge"
+#### 🎨 Estilos para la sección "knowledge"
 ```css
 .knowledge{
     background-color: #e5e5f7;
@@ -98,7 +98,7 @@ Se ha añadido un `<main>` con las siguientes secciones:
 }
 ```
 
-### Reutilización de variables CSS:
+### Reutilización de variables 🎨  CSS:
 
 Se sigue utilizando la variable global ya definida:
 ```css
@@ -111,10 +111,17 @@ Se sigue utilizando la variable global ya definida:
 ### Descripción del proyecto:
 Este curso de Programación Web está diseñado para enseñar desde los fundamentos hasta el dominio de tecnologías clave como HTML, CSS y JavaScript. Cada versión incluye mejoras en diseño y funcionalidades para una mejor experiencia de aprendizaje.
 
-### Instalación y ejecución:
+### 🚀 Instalación y ejecución:
 1. Clonar el repositorio.
 2. Abrir el archivo `index.html` en un navegador.
 3. Explorar los estilos en `styles.css` para personalizar la apariencia.
+
+---
+## 📢 Notas Adicionales
+- Recuerda utilizar `Live Server` en VSCode para visualizar los cambios en tiempo real y comprobar en Google Chrome.
+- Se recomienda seguir la organización de carpetas establecida para mantener un código limpio y estructurado.
+- Se sugiere documentar cualquier modificación importante en el código para facilitar su mantenimiento.
+
 
 ## 🏆 Tecnologías Utilizadas
 
