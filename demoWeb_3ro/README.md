@@ -14,9 +14,9 @@ Se ha añadido un `<main>` con las siguientes secciones:
 - Sección con título `¿Qué aprenderás en este curso?`.
 - Párrafo con descripción sobre los temas cubiertos: Flexbox, Grid, Custom Properties, Position, Animaciones, Box Model, etc.
 - Tres artículos con iconos e información sobre los temas principales:
-  - **CSS Layouts**
-  - **Animaciones**
-  - **Sass**
+  - **CSS Layouts** ![🎨](./images/shapes.svg)
+  - **Animaciones** ![🖌️](./images/paint.svg)
+  - **Sass** ![💻](./images/code.svg)
 
 #### Sección "Curso completo de WEB"
 - Título `Curso completo de WEB. ¡Domina PROGRAMACION WEB de una vez por todas!`.
@@ -122,4 +122,3 @@ Este curso de Programación Web está diseñado para enseñar desde los fundamen
 - Mejorar la adaptabilidad en dispositivos móviles.
 
 ¡Sigue atento a las próximas actualizaciones! 🚀
-
