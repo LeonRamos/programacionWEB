@@ -130,4 +130,164 @@ export class AuthService {
 1. Inicia el backend con el comando: `node server.js`
 2. Inicia el frontend con el comando: `ng serve`
 
+
+# Proyecto de Autenticación con Angular 19, Node.js y MySQL 🚀
+
+[![Angular](https://img.shields.io/badge/Angular-19-red)](https://angular.io/) [![Node.js](https://img.shields.io/badge/Node.js-18-green)](https://nodejs.org/) [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://www.mysql.com/)
+
+Este proyecto es un ejemplo práctico de autenticación de usuarios utilizando **Angular 19**, **Node.js** y **MySQL**, implementando **Angular Material** para mejorar la experiencia visual. 🔒
+
+## 📋 Pasos para Crear la Base de Datos en Windows
+
+1. Descarga el instalador de MySQL desde el sitio oficial: [MySQL Installer](https://dev.mysql.com/downloads/installer/).
+2. Durante la instalación, selecciona **"Server Only"** si solo deseas instalar el servidor MySQL.
+3. Configura una contraseña segura para el usuario **root**.
+4. Finaliza la instalación y anota el puerto por defecto (generalmente **3306**).
+
+## 🗄️ Crear la Base de Datos en MySQL
+
+```sql
+CREATE DATABASE auth_db;
+USE auth_db;
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+```
+
+## 🔧 Configurar el Proyecto Angular y Node.js
+
+### Crear el proyecto Angular
+```bash
+ng new angular-auth --routing --style=css
+cd angular-auth
+ng add @angular/material
+ng g c components/login
+ng g c components/register
+ng g s services/auth
+```
+
+### Crear el backend con Node.js y Express
+```bash
+mkdir backend
+cd backend
+npm init -y
+npm install express mysql body-parser cors jsonwebtoken bcryptjs dotenv
+```
+
+## 🖥️ Configurar el Backend (Node.js)
+En el directorio `backend`, crea el archivo `server.js` con el siguiente contenido:
+
+```javascript
+const express = require('express');
+const mysql = require('mysql');
+const bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+const cors = require('cors');
+require('dotenv').config();
+
+const app = express();
+app.use(bodyParser.json());
+app.use(cors());
+
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'auth_db'
+});
+
+db.connect(err => {
+  if (err) throw err;
+  console.log('Conectado a la base de datos MySQL');
+});
+
+app.post('/register', (req, res) => {
+  const { username, password } = req.body;
+  const hashedPassword = bcrypt.hashSync(password, 8);
+  const query = 'INSERT INTO users (username, password) VALUES (?, ?)';
+  db.query(query, [username, hashedPassword], (err) => {
+    if (err) return res.status(500).send(err);
+    res.status(200).send({ message: 'Usuario registrado con éxito' });
+  });
+});
+
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  const query = 'SELECT * FROM users WHERE username = ?';
+  db.query(query, [username], (err, results) => {
+    if (err || results.length === 0) return res.status(401).send('Usuario no encontrado');
+
+    const user = results[0];
+    const passwordIsValid = bcrypt.compareSync(password, user.password);
+    if (!passwordIsValid) return res.status(401).send('Contraseña incorrecta');
+
+    const token = jwt.sign({ id: user.id }, 'clave_secreta', { expiresIn: '1h' });
+    res.status(200).send({ auth: true, token });
+  });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`));
+```
+
+## 🌐 Configurar el Frontend en Angular
+En el servicio `AuthService` (`src/app/services/auth.service.ts`)
+
+```typescript
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({ providedIn: 'root' })
+export class AuthService {
+  private apiUrl = 'http://localhost:3000';
+
+  constructor(private http: HttpClient) {}
+
+  register(user: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/register`, user);
+  }
+
+  login(user: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/login`, user);
+  }
+}
+```
+
+## 📝 Crear Componentes de Login y Registro
+En el componente `Login` (`src/app/components/login/login.component.ts`)
+
+```typescript
+import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent {
+  username = '';
+  password = '';
+
+  constructor(private authService: AuthService) {}
+
+  login() {
+    this.authService.login({ username: this.username, password: this.password })
+      .subscribe(response => {
+        alert('Inicio de sesión exitoso');
+        localStorage.setItem('token', response.token);
+      }, err => alert('Error en el inicio de sesión'));
+  }
+}
+```
+
+## 🚀 Prueba del Proyecto
+1. Inicia el backend con el comando: `node server.js`
+2. Inicia el frontend con el comando: `ng serve`
+
+
 Con esto, tendrás un sistema de autenticación funcional utilizando Angular, Node.js, MySQL y Angular Material. 🚀
